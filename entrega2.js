@@ -7,12 +7,6 @@
 
 /* Crea una arrow function que, rebent un paràmetre, retorni un objecte amb un atribut que tingui com a valor el paràmetre rebut. */
 
-const meuNom = function () {
-    return {
-        nom: "Joan Carles",
-    };
-}
-console.log(meuNom().nom);
 
 const meuNom = () => ({
     nom: "Joan Carles"
