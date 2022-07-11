@@ -1,9 +1,10 @@
 /*  Crea una funció que mostri per consola el nom d'usuari/ària en invocar-la passant-li el nom com a paràmetre. */
 
-const usuari = function (nom) {
-    return 'Hola ' + nom;
-};
+function usuari(nom) {
+    return "Benvingut " + nom;
+}
 console.log(usuari('Joan Carles'));
+
 
 /* Mostra per consola el nom i cognoms de l'usuari/ària mitjançant template literals, guardant-los en variables i referenciant-les en la impressió del missatge. */
 
@@ -18,9 +19,12 @@ console.log(usuari);
 
 function sumar(a, b) {
     let suma = a + b;
-    console.log(`La suma de a y b es igual a ${suma}`);
+    return suma;
 }
-sumar(3, 4)
+let resultat = sumar(3, 4);
+console.log(`La suma de a y b es igual a ${resultat}`);
+
+/* Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 per la consola. Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades. */
 
 
 
@@ -34,10 +38,13 @@ sumar(3, 4)
 
 
 
-    /* Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari/ària a rebut com a paràmetre. */
 
-    (function (nom = 'Joan Carles') {
-        console.log(nom)
-    }
-    )();
+
+
+/* Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari/ària a rebut com a paràmetre. */
+
+(function (nom = 'Joan Carles') {
+    console.log(nom)
+}
+)();
 
