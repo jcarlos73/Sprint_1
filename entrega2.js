@@ -1,6 +1,6 @@
 /* Mostra per la consola el resultat d'una arrow function autoinvocable que sumi dos nombres. */
 
-(function () {
+(() => {
     const add = (a, b) => a + b
     console.log(add(3, 4));
 })();
