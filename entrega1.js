@@ -1,9 +1,11 @@
 /*  Crea una funció que mostri per consola el nom d'usuari/ària en invocar-la passant-li el nom com a paràmetre. */
 
-function usuari(nom) {
-    return "Benvingut " + nom;
+function saludar(nom) {
+
+    console.log(`Hola em dic ${nom}`);
 }
-console.log(usuari('Joan Carles'));
+
+saludar('Joan Carles');
 
 
 /* Mostra per consola el nom i cognoms de l'usuari/ària mitjançant template literals, guardant-los en variables i referenciant-les en la impressió del missatge. */
